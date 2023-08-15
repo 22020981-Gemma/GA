@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Fixed Deposit</title>
+
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .cancel {
+            padding-right:50px;
+            width:30px;
+            float:left;
+            margin-left:10px;
+            margin-top:0;
+            
+        }
+        
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .topcontainer {
+            height:110px;
+            border-style: solid;
+            border-color:black;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+            
+            
+            
+        } 
+
+        .container2 {
+            height:80px;
+            border-style: solid;
+            border-color:white;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+            
+            
+        } 
+        
+
+
+
+        
+
+        img {
+            margin-top:25px;
+            width:50px;
+            float:left;
+            margin-left:10px;
+            
+        }
+
+        p {
+            margin-top:25px;
+            font-size:14px;
+            margin-left:100px;
+            
+        }
+
+        .fd {
+            margin-top:10px;
+        }
+
+        
+
+        select {
+            width: auto;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: whitesmoke;
+            font-size: 20px;
+        }   
+
+        .container {
+            height:100px;
+            border-style: solid;
+            border-color:white;
+            background-color:whitesmoke;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+        } 
+
+        label {
+            margin-left:10px;
+            
+        }
+
+        .amt {
+            margin-top:0;
+            float:right;
+            margin-right:35px;
+            
+            
+        }
+
+        .imgcontainer {
+            margin-block:0;
+            height:40px;
+            border-style: solid;
+            border-color:white;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+
+        }
+
+        .arrow {
+            margin-left:15px;
+            width:40px;
+            margin-top:4px;
+ 
+        }
+
+        .dep {
+            float:right;
+            margin-right:35px;
+        }
+
+        input[type=text] {
+            border:none;
+            background-color:whitesmoke;
+            width:100px;
+            
+            
+        }
+
+        button {
+            padding:15px;
+            background-color: red;
+            color:white;
+            border:none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:400px;
+            border-radius:10px;
+            cursor: pointer;
+            margin-top:170px;
+            margin-bottom:20px;
+        }
+
+        
+
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img class="cancel" src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+        
+        <h2>
+            Place Fixed Deposit
+        </h2>
+
+        <hr>
+    </header>
+
+    <section>
+        <div class="topcontainer">
+            <img src="https://static.thenounproject.com/png/4038155-200.png">
+            <p>
+                My Account
+                <br>
+                <br>
+                XXX-XXXXXX-X
+            </p>
+
+            <p class="amt">
+                SGD XXXX.XX
+            </p>
+        </div>
+
+        <div class="imgcontainer">
+            <img class="arrow" src="https://icons.veryicon.com/png/o/miscellaneous/arrows/double-arrow-down-2.png">  
+           
+        </div>
+
+
+        <div class="container2">
+            <img class="fd" src="https://cdn-icons-png.flaticon.com/512/858/858170.png">
+            <p class="fd">Fixed Deposit
+            <br>
+            <br>
+            XXXX-XXXXXXXX-X
+            </p>
+        </div>
+
+        <div class="container">
+            
+            <div class="dep">
+                <br>
+                <label for="min_amt">Minimum SGD 1,000</label>
+                <br><br>
+                <input type="text" id="min_amt" name="min_amt" value="0.00">
+            </div>
+            
+            <div>
+            <br>
+            <label for="currencyType">You're depositing</label>
+            <br>
+            <select name="currencyType" id="currencyType">
+                <option value="Singapore Dollar">SGD</option>
+                <option value="Australian Dollar">AUD</option>
+                <option value="Canadian Dollar">CAD</option>
+                <option value="Malaysian Ringgit">RM</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <form action="/action_page.php">
+            
+                <label for="option1">Choose placement period:</label><br>
+                <input type="checkbox" id="option1" name="option1" value="1">
+                <label for="option1"> 1 month</label>
+                <input type="checkbox" id="option5" name="option5" value="5">
+                <label for="option5"> 5 months</label>
+                <input type="checkbox" id="option9" name="option9" value="9">
+                <label for="option9"> 9 months</label><br>
+                <input type="checkbox" id="option2" name="option2" value="2">
+                <label for="option2"> 2 months</label>
+                <input type="checkbox" id="option6" name="option6" value="6">
+                <label for="option6"> 6 months</label>
+                <input type="checkbox" id="option10" name="option10" value="10">
+                <label for="option10"> 10 months</label><br>
+                <input type="checkbox" id="option3" name="option3" value="3">
+                <label for="option3"> 3 months</label>
+                <input type="checkbox" id="option7" name="option7" value="7">
+                <label for="option7"> 7 months</label>
+                <input type="checkbox" id="option11" name="option11" value="11">
+                <label for="option11"> 11 months</label><br>
+                <input type="checkbox" id="option4" name="option4" value="4">
+                <label for="option4"> 4 months</label>
+                <input type="checkbox" id="option8" name="option8" value="8">
+                <label for="option8"> 8 months</label>
+                <input type="checkbox" id="option12" name="option12" value="12">
+                <label for="option12"> 12 months</label><br><br>
+            </form>
+        </div>
+
+        <br>
+        <a href="#">View interest rates</a>
+    </section>
+
+
+
+    <button onclick="nextBtn()">NEXT</button>
+    
+    <script>
+            function cancel() {
+            window.location.href = "FD.html"
+            }
+
+            function nextBtn() {
+                window.location.href="transaction.html"
+            }
+ 
+    </script>
+    
+</body>
+</html>

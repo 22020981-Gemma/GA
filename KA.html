@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Assessment</title>
+
+    <style>
+        
+        html {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            width:40px;
+            float:left;
+            margin-left:10px;
+            margin-top:0;
+        }
+
+        .KA {
+            text-align: center;
+            font-size: 32px;
+            margin-top:0;
+        }
+
+        .cka {
+            color:goldenrod;
+            font-size: 24px;
+        }
+
+        .container {
+            background-color: white;
+            padding-top:10px;
+            
+            
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        footer {
+            
+            margin-bottom: 0;
+            font-size:12px;
+            color:grey;
+            
+        }
+
+        a {
+            color:grey;
+        }
+
+        button {
+            padding:15px;
+            background-color: red;
+            color:white;
+            border:none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:400px;
+            border-radius:10px;
+           cursor: pointer;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header class="container">
+
+        <img src="https://cdn.icon-icons.com/icons2/2645/PNG/512/x_close_cross_delete_icon_159748.png" onclick="cancel()"> 
+        
+        <script>
+            function cancel() {
+            window.location.href = "AM.html"
+            }
+ 
+        </script>
+        
+        <p class="KA">
+            KNOWLEDGE ASSESSMENT
+        </p>
+        <br>
+        
+        <div>
+        <h1><b>Please complete the</b></h1>
+        <b class="cka">Customer Knowledge Assessment (CKA)</b></p>
+        <br>
+        </div>
+    </header>
+
+    
+
+    <article>
+        <p>
+            The Customer Knowledge Assessment (CKA) allows us to ascertain if you have the relevant knowledge or experience to understand the risks and features of an unlisted Specified Investment Product (SIP). Thus, it is important that you complete the CKA, to the bet of your knowledge, so that the results will be accurate and reflective of your experience and knowledge.
+        </p>
+
+        <p>
+            If you provide inaccurate or incomplete information, it may affect the outcome.
+        </p>
+        <br>
+        <br>
+
+        
+
+    </article>
+
+        <footer>
+            
+            <br>
+            <p>
+                By proceeding with the Assesment, I/we have read and understood the <a href="CKA.html">Customer Knowledge Assessment (CKA)</a> requirements relating to investment in Unlisted Specified Investment Products.
+            </p>
+        </footer>
+        <br>
+        <br>
+
+
+    <button onclick="startBtn()"><b>START ASSESSMENT</b></button>
+
+    <script>
+        function startBtn() {
+            window.location.href = "assessment.html"
+        }
+    </script>
+
+</body>
+</html>

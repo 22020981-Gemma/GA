@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    
+      .topnav {
+        overflow: hidden;
+        background-color: whitesmoke;
+      }
+    
+      .topnav a {
+        float: right;
+        display: block;
+        color: grey;
+        text-align: center;
+        padding: 18px 30px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+    
+      .topnav a:hover {
+        background-color: #ddd;
+      }
+    
+    
+      .topnav a.logo {
+        background-color: red;
+        color:white;
+        float:left;
+      }
+
+    
+      .topnav .menu {
+        display: none;
+      }
+    
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.menu {
+          float: right;
+          display: block;
+        }
+      }
+    
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .menu {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        }
+      }
+    
+      .investmentPlans {
+        height:150px;
+        background: lightskyblue;
+        background-image: url("https://img-c.udemycdn.com/course/750x422/3758942_1a55_3.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        font-size:18px;
+        }
+    
+      .viewStocks {
+        
+        height:150px;
+        background:lightcoral;
+        background-image: url("https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/finance/5-methods-to-reduce-investment-risks-from-your-portfolio-717x404.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        font-size:18px;
+        }
+    
+      .learnMore {
+        height:150px;
+        background:lightgreen;
+        background-image: url("https://www.pngitem.com/pimgs/m/8-86998_graph-transparent-background-graph-png-png-download.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        font-size:18px;
+        }
+    
+      
+    
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+    
+      button {
+        display: block;
+        margin:0 auto;
+      }
+    
+      footer {
+        margin-top: 8px;
+        text-align: center;
+        
+        
+      }
+    
+    </style>
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+      <header>
+        <div class="topnav" id="myTopnav">
+          
+          <a class="logo"><i class="fa fa-fw fa-user"></i>User</a>
+          <a href="settings.html"><i class="fa fa-fw fa-gear"></i>Settings</a>
+          <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+          <a href="#about"><i class="fa fa-fw fa-info"></i>About</a>
+          
+          <a href="javascript:void(0);" class="menu" onclick="openBar()"><i class="fa fa-bars"></i></a>
+        </div>
+      </header>
+    
+      <nav>
+        <div class="investmentPlans">
+          <h2>
+              Investment Plans
+          </h2>
+    
+          <p>Ready to begin your investment journey? Complete a survey now!
+          </p>
+    
+          <button onclick="go()">Let's Go!</button>
+    
+          <script>
+              function go() {
+              window.location.href = "plans.html";
+           }
+    
+          </script>
+        </div>
+    
+        <div class="viewStocks">
+          <h2>
+              View 
+          </h2>
+    
+          <p>
+              View the latest rates!
+          </p>
+    
+          <button onclick="view()">View!</button>
+    
+          <script>
+              function view() {
+              window.location.href = "https://www.google.com/finance/";
+           }
+          </script>
+        </div>
+    
+        <div class="learnMore">            
+          <h2>
+              Learn More
+          </h2>
+    
+          <p>
+              Interested in investing but don't know where to begin? Click for more information!
+          </p>
+    
+          <button onclick="learn()">Learn More</button>
+    
+          <script>
+              function learn() {
+              window.location.href = "learn2.html";
+           }
+           </script>
+        </div>
+    </nav>
+    
+    <footer>
+      <a href="#">terms and conditions</a>
+    </footer>
+    
+    
+    <script>
+    function openBar() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+    </body>
+    </html>

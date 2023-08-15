@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gemma's Bank</title>
+  <style>
+    h1 {
+        background-color: #666;
+        text-align: center;
+        font-size: 90px;
+        color: white;
+        margin-top: 0;
+    }
+
+    section {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    form {
+        margin-top: auto;
+    }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1> WELCOME! </h1>
+  </header>
+
+  <section>
+    <p>
+        Submit application to get started!
+    </p>
+
+  </section>
+  
+  <form action="/submit-application" method="post" style="text-align:center;">
+    <p><label for="name">Name:</label></p>
+    <input type="text" name="name" id="name">
+    <p><label for="no.">Phone Number:</label></p>
+    <input type="text" name="no." id="no.">
+    <p><label for="credit_card_number">Credit Card Number:</label></p>
+    <input type="text" name="credit_card_number" id="credit_card_number">
+    <p><label for="otp">OTP:</label></p>
+    <input type="text" name="otp" id="otp">
+    <p><button type="button" onclick="submitForm()">Submit</button></p>
+    
+  </form> 
+
+  <script>
+    function submitForm() {
+      window.location.href = "plans.html";
+    } 
+  </script>
+
+</body>
+</html>

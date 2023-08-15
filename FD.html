@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Fixed Deposit</title>
+
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .cancel {
+            padding-right:50px;
+            width:30px;
+            float:left;
+            margin-left:10px;
+            
+        }
+        
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .topcontainer {
+            height:68px;
+            border-style: solid;
+            border-color:white;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+            
+            
+        } 
+
+        
+
+
+
+        button {
+            padding:20px;
+            width:95%;
+            color:black;
+            border:none;
+            font-size:17px;
+            float:right;
+            border-radius:10px;
+            cursor: pointer;
+            text-align: left;
+            background-color: white;
+            
+            
+        }
+
+        img {
+            width:60px;
+            cursor:pointer;
+        }
+
+        p {
+            
+            margin-top:10px;
+            font-size:15px;
+            margin-left:85px;
+            
+        }
+
+        .fd {
+            width:60px;
+            float:left;
+        }
+
+        .arrow {
+            width: 50px;
+            margin-left:7px;
+           
+        }
+
+        select {
+            width: auto;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: whitesmoke;
+            font-size:18px;
+            
+        }   
+
+        .container {
+            height:100px;
+            border-style: solid;
+            border-color:white;
+            background-color:whitesmoke;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+
+        } 
+
+        label {
+            margin-left:10px;
+        }
+
+        .dep {
+            float:right;
+            margin-right:35px;
+        }
+
+        input[type=text] {
+            border:none;
+            background-color:whitesmoke;
+            width:100px;
+            
+            
+        }
+
+        .nextbutton {
+            padding:15px;
+            background-color: red;
+            color:white;
+            border:none;
+            
+            margin-left: 50%;
+            margin-right: 32%;
+            width:400px;
+            border-radius:10px;
+            cursor: pointer;
+            margin-top:110px;
+            text-align: center;
+
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <img class="cancel" src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+        </nav>
+        <script>
+            function cancel() {
+            window.location.href = "plans.html"
+            }
+ 
+        </script>
+        
+        <h2>
+            Place Fixed Deposit
+        </h2>
+
+        <hr>
+    </header>
+
+    <section>
+        <div class="topcontainer">
+            <img src="https://pixlok.com/wp-content/uploads/2021/12/Add-Icon-SVG-98ygj.png" onclick="selectBtn()">
+            <button onclick="selectBtn()">Select Fund Source ></button>
+        </div>
+
+        <img class="arrow" src="https://icons.veryicon.com/png/o/miscellaneous/arrows/double-arrow-down-2.png">  
+            
+        <div class="topcontainer">
+            <img class="fd" src="https://cdn-icons-png.flaticon.com/512/858/858170.png">
+            <p>Fixed Deposit
+            <br>
+            <br>
+            XXXX-XXXXXXXX-X
+            </p>
+        </div>
+
+        <div class="container">
+            
+            <div class="dep">
+                <br>
+                <label for="min_amt">Minimum SGD 1,000</label>
+                <br><br>
+                <input type="text" id="min_amt" name="min_amt" value="0.00">
+            </div>
+            
+
+            <br>
+
+            <label for="currencyType">You're depositing</label>
+            
+            <br>
+            <select name="currencyType" id="currencyType">
+                <option value="Singapore Dollar">SGD</option>
+                <option value="Australian Dollar">AUD</option>
+                <option value="Canadian Dollar">CAD</option>
+                <option value="Malaysian Ringgit">RM</option>
+            </select>
+        </div>
+        
+        <a href="#">View interest rates</a>
+    </section>
+
+    <button class="nextbutton" onclick="nextBtn()">NEXT</button>   
+    
+
+    <script>
+        function selectBtn() {
+            window.location.href="fund.html"
+        }
+
+        function nextBtn() {
+            alert("Select Fund Source first")
+        }
+    </script>
+    
+</body>
+</html>

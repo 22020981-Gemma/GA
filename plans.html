@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest</title>
+
+    <style>
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+        h3 {
+            color:grey;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display:flex;
+            background-color: white;
+            color: black;
+            padding: 30px;
+            
+            border-color:lightgrey;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.9;
+            
+        }
+
+        .cancel {
+            padding-right:200px;
+            width:40px;
+            float:left;
+            margin-left:10px;
+        }
+
+    </style>
+
+   
+
+</head>
+<body>
+    <header>
+
+        <img class="cancel" src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+        
+        <script>
+            function cancel() {
+            window.location.href = "user.html"
+            }
+ 
+        </script>
+        
+        <h1>
+            Invest
+        </h1>
+    </header>
+
+    <hr>
+
+
+    <article>
+        <h3>POPULAR</h3>
+        <button onclick="FDBtn()">Fixed Deposits ></button>
+        <button onclick="fundBtn()">Unit Trusts & ETFs ></button>
+    </article>
+
+    <br>
+    <hr>
+
+    <article>
+        <h3>INVESTMENT ACCOUNT MANAGEMENT</h3>
+        <button onclick="profileBtn()">
+            Your Investment Profile >
+        </button>
+
+
+
+    </article>
+
+    <script>
+
+        function profileBtn() {
+          
+          window.location.href = "AM.html";
+      
+        }
+
+        function FDBtn() {
+            window.location.href = "FD.html"
+        }
+
+        function fundBtn() {
+            window.location.href = "etf.html"
+        }
+      
+      </script>
+
+</body>
+</html>

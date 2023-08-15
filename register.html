@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Registration</title>
+
+<style>
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body {
+    width:auto;
+    margin-right:10%;
+    margin-left:10%;
+    margin-top: 15px;
+    
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+
+input[type=text], input[type=date], select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+
+
+.nextbtn {
+  background-color: red;
+  color: white;
+  padding: 16px;
+  
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  
+}
+
+.nextbtn:hover {
+  opacity: 1;
+}
+
+.tnc {
+    color:darkgrey;
+    margin-left:15px;
+}
+
+h1 {
+  margin-top:5px;
+  
+}
+
+img {
+  margin-top:0;
+  width:40px;
+  float:left;
+  margin-right:10px;
+  
+}
+
+
+</style>
+</head>
+<body>
+
+    
+<form action="/action_page.php">
+  <div class="container">
+
+    <nav>
+      <img src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+      
+      <script>
+          function cancel() {
+          window.location.href = "index.html"
+          }
+
+      </script>
+    </nav>
+
+
+    <h1>Registration</h1>
+    <p id="date"></p>
+  
+
+  
+    <hr>
+
+    <label for="idType"><b>Identity Type</b></label>
+    
+    <select name="idType" id="idType">
+        <option value="Please Select">Please Select...</option>
+        <option value="Singaporean/PR NRIC">Singaporean/PR NRIC</option>
+        <option value="Malaysian IC">Malaysian IC</option>
+        <option value="Passport">Passport</option>
+    </select>
+
+    <label for="idNum"><b>Identity Number</b></label>
+    <input type="text" name="idNum" id="idNum" required>
+
+    <label for="dob"><b>Date Of Birth</b></label>
+    <input type="date"  id="dob" name="dob" required>
+    <hr>
+    
+    <p>Already have an account? <a href="login.html">Log in</a>. Or</p>
+    <p>sign up via Singpass <a href="singpass.html">here</a>.</p>
+    <button type="submit" class="nextbtn" onclick="nextBtn()">Next</button>
+
+
+  </div>
+</form>
+
+<footer>
+    <a class="tnc" href="#">Terms and Conditions</a></p>
+</footer>
+
+<script>
+    document.getElementById("date").innerHTML = Date();
+
+    function nextBtn() {
+        window.location.href = "authenticate.html";
+
+  }
+</script>
+
+
+
+</body>
+</html>

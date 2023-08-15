@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Fund Source</title>
+
+    <style>
+
+        html {
+            font-family:Arial, Helvetica, sans-serif;
+            
+        }
+
+        /* .container {
+            height:110px;
+            border-style: solid;
+            border-color:white;
+            background-color:#f1f1f1;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+
+        }  */
+
+        img {
+            width:40px;
+            float:left;
+            /* margin-left:10px; */
+            padding-right:50px;
+        }
+
+        h1 {
+            margin-left:100px;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .account {
+            width:60px;
+            margin-top:25px;
+            float:left;
+            margin-left:30px;
+        }
+
+        button {
+            height:110px;
+            width:100%;
+            border-color:whitesmoke;
+            background-color: white;
+            cursor:pointer;
+        }
+
+
+        p {
+            float:left;
+            margin-top:0;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.icon-icons.com/icons2/2645/PNG/512/x_close_cross_delete_icon_159748.png" onclick="cancel()"> 
+        
+        <script>
+            function cancel() {
+            window.location.href = "fD.html"
+            }
+ 
+        </script>
+
+        <h1>
+            Select Fund Source
+        </h1>
+
+        <hr>
+    </header>
+
+    
+
+    <section>
+        <button onclick="accBtn()">
+
+            <img class="account" src="https://cdn-icons-png.flaticon.com/512/858/858170.png">
+
+            <p>
+            <br>
+                My Account
+            <br>
+            <br>
+                XXX-XXXXXX-X
+            <br>
+            <br>
+                SGD XXXX.XX
+            </p>
+            
+        </button>
+    </section>
+
+    <script>
+        function accBtn() {
+            window.location.href="FD2.html"
+        }
+    </script>
+
+</body>
+</html>

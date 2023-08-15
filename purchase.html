@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cancel {
+            padding-right:50px;
+            width:30px;
+            float:left;
+            margin-left:10px;
+            
+        }
+
+        hr {
+            
+            border: 1px solid #f1f1f1;
+            margin-bottom: 10px;
+        }
+
+
+        .container1 {
+            height:auto;
+            border-style: solid;
+            background-color:white;
+            border-color:white;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+        } 
+
+
+        .a {
+            color:darkgrey;
+            margin-left:10px;
+            font-size:14px;
+        }
+
+        p {
+            font-size:14px;
+        }
+
+        .arrow {
+            float:right;
+            width:40px;
+            cursor:pointer;
+            margin-top:0;
+            padding:10px;
+        }
+
+        .p1 {
+           
+            margin-left:10px;
+            font-size:17px;
+        }
+
+        .yr {
+            color:grey;
+            font-size:15px;
+            margin-left:10px;
+        }
+
+        .percent {
+            color:green;
+            font-size:18px;
+            float:right;
+            margin-right:10px;
+        }
+      
+        h2 {
+            text-align: center;
+        }
+
+        .sgd {
+            font-size:12px;
+            color:darkgrey;
+            float:right;
+            margin-right:5px;
+            margin-top:5px;
+        }
+
+        .price {
+            color:grey;
+            float:right;
+            margin-right:10px;
+        }
+
+        .purchasebtn {
+            background-color: red;
+            color: white;
+            padding: 16px;
+            font-size:18px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            
+            }
+
+        .purchasebtn:hover {
+            opacity: 1;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <img class="cancel" src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+        </nav>
+        <script>
+            function cancel() {
+            window.location.href = "etf.html"
+            }
+ 
+        </script>
+        
+        <h2>
+            Fund Information
+        </h2>
+    </header>
+
+    <div class="container1">
+        
+        <p class="p1">Nikki AM Japan Dividend Equity Fund -SGD-
+            <br>Hedged - Mdis - Cash
+        </p>
+
+        <p class="a">
+            Nikko Asset Management Asia
+        </p>
+
+        <br>
+        <label for class="yr">1-Year Performance</label> 
+        <label for class="percent">33.17%</label><br><br>
+
+        <label for class="yr">Indicative Price (10 Aug 2023)</label> 
+        <label for class="price">1.554</label>
+        <label for class="sgd">SGD</label>
+        <br><br>
+        
+        <label for class="yr">Min. Investment</label> 
+        <label for class="price">1,000.00</label>
+        <label for class="sgd">SGD</label>
+        <br>
+        <hr>
+    </div>
+
+    <button type="submit" class="purchasebtn" onclick="purchaseBtn()"><b>PURCHASE</b></button>
+
+    <script>
+        function purchaseBtn() {
+            window.location.href="transaction3.html"
+        }
+    </script>
+</body>
+</html>

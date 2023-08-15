@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Transaction History</title>
+
+    <style>
+
+        html {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        
+        img {
+            margin-left:15px;
+            width:40px;
+            float:left; 
+            padding-right:45px;
+        }
+
+        .searchbar {
+            padding: 10px;
+            font-size: 17px;
+            text-align: center;
+            border:none;
+            width: 40%;
+            display:block;
+            margin-left:29%;
+            
+            background-color:whitesmoke;
+        }
+
+        .container {
+            
+            
+            height:120px;
+            border-style: solid;
+            border-color:white;
+            background-color:white;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+            
+            
+        }
+
+        .acc {
+            text-align: center;
+        }
+
+        .space {
+            width:auto;
+            color:grey;
+            height:50px;
+            border-style: solid;
+            border-color:whitesmoke;
+            background-color:whitesmoke;
+            margin-top:20px;
+            width:auto;
+            
+        }
+
+        p {
+
+            margin-left:10px;
+
+        }
+
+        .type {
+            color:grey;
+            margin-left:10px;
+        }
+
+        
+
+        .arrow {
+            float:right;
+            width:40px;
+            cursor:pointer;
+            margin-top:0;
+            padding:10px;
+        }
+
+        .amt {
+            float:right;
+            margin-right:20px;
+            margin-top:0;
+            
+        }
+
+        .sgd {
+            color:rgb(99, 99, 99);
+            font-size:14px;
+            float:right;
+            margin-top:3px;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+            width:100%;
+        }
+
+        
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <img src="https://cdn.icon-icons.com/icons2/2645/PNG/512/x_close_cross_delete_icon_159748.png" onclick="cancel()"> 
+        
+        <script>
+            function cancel() {
+            window.location.href = "view.html"
+            }
+ 
+        </script>
+
+        <form class="search" action="/action_page.php">
+            
+            
+            <input class="searchbar" type="text" placeholder="Search..." name="search">
+         </form> 
+    </header>
+
+    <article>
+        <div class="acc">
+            <h3>
+                My Account
+            </h3>
+
+            <p><b>XXX-XXXXXX-X</b></p> 
+
+            <p id="date"></p>
+        </div>
+
+        <div class="space">
+            
+            <p>WED, 09 AUG 2023</p>
+            
+            
+        </div>
+
+        
+        
+        <div class="container">
+            <img type="button" onclick="viewBtn()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
+            <p>FDXXXXXXXXXXXXXXXX</p>
+            
+            <p class="type">Advice</p>
+            
+            <p class="amt"> -X,XXX.XX</p>
+            <label for class="sgd">SGD</label>
+
+            <br>
+            <hr>
+        </div>
+    </article>
+
+    <script>
+        
+        document.getElementById("date").innerHTML = Date();
+
+        function viewBtn() {
+            window.location.href="transaction2.html"
+        }
+    </script>
+</body>
+</html>

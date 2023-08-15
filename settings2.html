@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settings</title>
+<style>
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-top:0;
+    width:50%;
+    margin-left:310px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 50px;
+  background-color: white;
+  text-align: center;
+}
+
+.histbtn {
+   
+    margin-bottom:25px;
+    margin-top:10px;
+    text-align: center;
+    background-color:white;
+    color:black;
+    padding: 16px 20px;
+    border-color:darkgrey;
+    border-radius:5px;
+}
+
+
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.backbtn {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  margin: 10px 190px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+.backbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Settings</h1>
+    
+    <hr>
+
+    
+    <button class="histbtn">Edit profile</button>
+    <br>
+
+   
+    <button class="histbtn">Privacy</button>
+
+        <br>
+    
+    <button type="button" class="histbtn" onclick="histBtn()">View transaction history</button>
+    <br>
+
+    
+    <hr>
+
+    
+
+    <button type="button" class="button backbtn" onclick="backBtn()">Back</button>
+   
+    <a href="index.html">Log Out</a>
+
+    
+  </div>
+  
+  
+</form>
+
+<script>
+
+  function backBtn() {
+    
+    window.location.href = "user2.html";
+
+  }
+
+  function histBtn() {
+    window.location.href = "view2.html"
+  }
+
+</script>
+
+
+</body>
+</html>

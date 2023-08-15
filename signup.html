@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gemma's Bank</title>
+  <style>
+
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+        background-color: darkgrey;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        margin-top:0;
+    
+    }
+
+    section {
+        margin-top:0;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    form {
+        margin-top: 0;
+    }
+
+    body {
+      background-image: url("https://dollarsandsense.sg/wp-content/uploads/2019/06/darren-nunis-1550378-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+   article{
+  
+  
+
+  width: 30%;
+    margin-top: 300px; 
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: whitesmoke;
+    text-align: center;
+} 
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+    article{    
+        padding-top: 60px;
+        padding-left: 50px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    
+
+  }
+    
+</style>
+
+</head>
+<body>
+  <header>
+    <h1> WELCOME! </h1>
+  
+  </header>
+
+  
+  <article>
+
+  
+  <form action="/submit-application" method="post" style="text-align:center;">
+    <p><label for="name">Full Name:</label></p>
+    <input type="text" name="name" id="name">
+    <p><label for="no.">Phone Number:</label></p>
+    <input type="text" name="no." id="no.">
+    <p><label for="email">Email Address:</label></p>
+    <input type="text" name="email" id="email">
+    <p><label for="pw">Password:</label></p>
+    <input type="text" name="pw" id="pw">
+    <p><label for="otp">OTP:</label></p>
+    <input type="text" name="otp" id="otp">
+    <p><button type="submit">Sign up</button></p>
+  </form>
+  </article>
+
+</body>
+</html>

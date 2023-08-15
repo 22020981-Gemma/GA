@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <style>
+        html {
+          font-family: Arial, Helvetica, sans-serif;
+          
+        }
+
+        body {
+            width:50%;
+            margin-left:340px;
+            margin-top:130px;
+           
+    
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        
+        
+        
+        input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        
+        .cfmbtn {
+          background-color: red;
+          color: white;
+          padding: 16px 18px;
+          margin-left:150px;
+          border: none;
+          cursor: pointer;
+          width: 50%;
+          opacity: 0.9;
+          
+        }
+        
+        .cfmbtn:hover {
+          opacity: 1;
+        }
+        
+        
+        .otp{
+         
+          text-align: center;
+        }
+
+        .tnc {
+            color:darkgrey;
+            text-align: center;
+        }
+
+        .home {
+            margin-left:10px;
+            
+        }
+
+        img {
+          float:left;
+          width:40px;
+          margin-left:10px;
+          
+        }
+        </style>
+        </head>
+        <body>
+        
+        <nav>
+            <img src="https://cdn.icon-icons.com/icons2/2645/PNG/512/x_close_cross_delete_icon_159748.png" onclick="cancel()"> 
+        </nav>
+        
+
+        <form action="/action_page.php">
+
+        <header>
+          <div class="container">
+            <h1>Authentication</h1>
+          </header>
+            <p>An OTP will be sent to you. Please enter OTP.</p>
+            <hr>
+        
+            <label for="otp"><b>OTP:</b></label>
+            <input type="password"  name="otp" id="otp" required>
+            <hr>
+           
+        
+            
+            <button type="submit" class="cfmbtn" onclick="cfmBtn()">CONFIRM</button>
+          </div>
+          
+          <p class="otp">Didn't receive OTP? <a href="#"> Resend OTP</a>.</p>
+          
+
+          </div>
+        </form>
+
+       
+
+    
+
+
+
+        <footer>
+            <a class="tnc" href="#">Terms & Conditions</a>
+    
+            
+        </footer>
+
+        <script>
+        function cfmBtn() {
+          window.location.href="user.html"
+    }
+
+      function cancel() {
+        window.location.href="login.html"
+      }
+    </script>
+        </body>
+        </html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Account Management</title>
+
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            
+        }
+
+        h2{
+            color:darkgrey;
+        }
+
+        h3 {
+            color:black;
+        }
+
+        .back{
+            color: black;
+        }
+
+        .container {
+            height:210px;
+            background-color: white;
+            border-style: solid;
+            border-color:lightgrey; 
+            margin-top:10px;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+        } 
+
+        .customer {
+            width:80px;
+            margin-left: 10px;
+            float:left;
+        }
+
+        h3 {
+            color:black;
+            margin-left:130px;
+            margin-top:30px;
+            
+            
+        }
+
+        p {
+            color:grey;
+            margin-left:10px;
+        }
+
+        button {
+            float:right;
+            margin-right:20px;
+            background-color: grey;
+            color:white;
+            border:none;
+            border-radius:15px;
+            padding:8px;
+            width:175px;
+            cursor:pointer;
+            
+        }
+
+        .cancel {
+            width:40px;
+            float:left;
+            margin-left:30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img class="cancel" src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+        
+        <script>
+            function cancel() {
+            window.location.href = "plans.html"
+            }
+ 
+        </script>
+        
+        <h1>
+            Investment Account Management
+        </h1>
+    </header>
+
+    <img class="center" src="https://cdn-icons-png.flaticon.com/512/2660/2660515.png">
+
+    <article>
+        <h2>
+            YOUR INVESTMENT PROFILE
+        </h2>
+
+        <div class="container">
+            <img class="customer" src="https://cdn-icons-png.flaticon.com/512/5778/5778472.png">
+            <h3>Customer Knowledge Assessment (CKA)</h3>
+            <br>
+            
+            <p><b>
+                Assesses if you fully understand the risks and features of the Unlisted Specified Investment Products like Unit Trusts
+            </b></p>
+
+            <br>
+            <button onclick="startBtn()">GET STARTED</button>
+        </div>
+    </article>
+
+    <script>
+        function startBtn() {
+
+            window.location.href = "KA.html";
+        }
+
+    </script>
+    
+</body>
+</html>

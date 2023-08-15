@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction history</title>
+
+    <style>
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color:whitesmoke;
+        }
+
+        h1 {
+            margin-top:0;
+        }
+
+        header {
+            padding-top:20px;
+            background-color:white;
+        }
+
+        img {
+            margin-left:15px;
+            width:40px;
+            float:left; 
+            padding-right:45px;
+        }
+
+        hr {
+            border: 1px solid lightgrey;
+            margin-bottom: 25px;
+        }
+
+        .container {
+            width:50%;
+            height:270px;
+            border-style:solid;
+            background-color: white;
+            margin-left:4%;
+            border-color:grey;
+            margin-top:4%;
+        }
+
+        .time {
+            margin-left:10px;
+            
+        }
+
+        .timeop {
+            margin-left:10px;
+        }
+
+        .date {
+            margin-left:10px;
+        }
+
+        .acc {
+            
+            margin-left:10px;
+        }
+
+        button {
+            padding:15px;
+            background-color: red;
+            color:white;
+            border:none;
+            display:block;
+            margin-left:10px;
+            width:200px;
+            border-radius:10px;
+            cursor: pointer;
+            margin-top:45px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+        
+        <script>
+            function cancel() {
+            window.location.href = "settings.html"
+            }
+ 
+        </script>
+
+        <h1>
+            Transaction History
+        </h1>
+        <hr>
+    </header>
+
+    <article>
+        <div class="container">
+            <br>
+            <br>
+            <label for class="acc">Account</label><br>
+            <select class="acc" name="acc" id="acc">
+            <option value="Select">Deposit Account</option>
+            <option value="Account">My Account XXX-XXXXXX-X</option>
+            </select><br><br>
+
+            <label for class="time">Time Range</label><br>
+            <select class="timeop" name="time" id="time">
+                <option value="Today">Today</option>
+                <option value="month">1 Month</option>
+                <option value="months">3 Months</option>
+                <option value="date">Range</option>  
+                <input class="date" type="date">
+            </select>
+
+            <button onclick="showBtn()">SHOW</button>
+        </div>
+    </article>
+
+    <script>
+        function showBtn() {
+            window.location.href="history.html"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Assessment</title>
+
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: white;
+            padding-bottom:1px;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+        .container {
+            width:auto;
+            padding: auto; 
+            background-color: white;
+            /* text-align: center; */
+            border-style: solid;
+            border-color:lightgrey; 
+            border-width:1px;
+            margin-top:10px;
+        }  
+
+        p {
+            margin-left:5px;
+        }
+
+        .cancel {
+            width:40px;
+            float:left;
+            margin-left:10px;
+        }
+
+        .education {
+            width:50px;
+        }
+
+        .work {
+            width:60px;
+        }
+
+        .ledger {
+            width:60px;
+        }
+
+        .KA {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 20px;
+            padding-top: 10px;
+            
+        }
+
+        button {
+            padding:15px;
+            background-color: red;
+            color:white;
+            border:none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:400px;
+            border-radius:10px;
+           cursor: pointer;
+        }
+
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <img class="cancel" src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+        
+        <script>
+            function cancel() {
+            window.location.href = "KA.html"
+            }
+ 
+        </script>
+        
+        <p class="KA">
+            KNOWLEDGE ASSESSMENT
+        </p>
+        
+    </header>
+
+    <article>
+        <div class="container">
+            <img class="education" src="https://cdn-icons-png.flaticon.com/512/3197/3197967.png">
+
+            <p><b>
+                What is your highest education level?
+            </b></p>
+
+            <form action="/action_page.php">
+                <input type="checkbox" id="option1" name="option1" value="1">
+                <label for="option1"> Below GCE 'O' or 'N' level</label><br>
+                <input type="checkbox" id="option2" name="option2" value="2">
+                <label for="option2"> GCE 'O' or 'N', or 'A' level</label><br>
+                <input type="checkbox" id="option3" name="option3" value="3">
+                <label for="option3"> Diploma</label><br>
+                <input type="checkbox" id="option4" name="option4" value="4">
+                <label for="option4"> Degree and above</label><br><br>
+            </form>
+
+        </div>
+
+        <div class="container">
+            <img class="work" src="https://cdn.icon-icons.com/icons2/3723/PNG/512/schedule_efficiency_timetable_work_time_working_icon_230467.png">
+
+            <p><b>
+                In the last ten years, have you spent at least 3 consecutive years in any of the following roles:
+                <br>
+                <br>
+                (i) Development, structuring, managing, selling, trading, researching or analysing investmet products, or training others in investment products;
+                <br>
+                <br>
+                (ii) Providing legal advice or have legal expertise in area listed above; or
+                <br>
+                <br>
+                (iii) Accountancy, actuarial science, treasury or managing financial risk
+                <br>
+                
+                
+            </b></p>
+
+
+            <form action="/action_page.php">
+                <input type="checkbox" id="option1" name="option1" value="1">
+                <label for="option1"> Yes</label><br>
+                <input type="checkbox" id="option2" name="option2" value="2">
+                <label for="option2"> No</label><br><br>
+                
+            </form>
+        </div>
+
+        <div class="container">
+            <img class="ledger" src="https://cdn-icons-png.flaticon.com/512/2845/2845550.png">
+
+            <p><b>
+                In the past 3 years, you have made at least six transactions in any of the products in the 2 groups below?
+                <br><br>
+                Group A:</b>
+                <br>
+                Unit trusts with derivatives; and/or Investment-linked insurance policies with derivatives
+            </p>
+
+
+            <form action="/action_page.php">
+                <input type="checkbox" id="option1" name="option1" value="1">
+                <label for="option1"> Yes</label><br>
+                <input type="checkbox" id="option2" name="option2" value="2">
+                <label for="option2"> No</label><br><br>    
+            </form>
+
+            <p><b>
+                Group B:</b>
+                <br>
+                Currency-linked investments, Structured deposits, Asset-backed securities and structured notes, Equity-linked notes, Foreign exchange margin trading line and foreign exchnage forward contacts
+                <br>   
+            </p>
+
+
+            <form action="/action_page.php">
+                <input type="checkbox" id="option1" name="option1" value="1">
+                <label for="option1"> Yes</label><br>
+                <input type="checkbox" id="option2" name="option2" value="2">
+                <label for="option2"> No</label><br><br>    
+            </form>
+        </div>
+
+    </article>
+
+    <br>
+    <button onclick="nextBtn()"><b>NEXT</b></button>
+
+    <script>
+        function nextBtn() {
+            window.location.href = ".html"
+        }
+    </script>
+
+
+    
+</body>
+</html>

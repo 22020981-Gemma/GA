@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funds</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cancel {
+            padding-right:50px;
+            width:30px;
+            float:left;
+            margin-left:10px;
+            
+        }
+
+        .searchbar {
+            padding: 10px;
+            font-size: 17px;
+            text-align: center;
+            border:none;
+            width: 40%;
+            display:block;
+            margin-left:29%;
+            border-radius:10px;
+            background-color:whitesmoke;
+        }
+
+        hr {
+            
+            border: 1px solid #f1f1f1;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            height:auto;
+            border-style: solid;
+            background-color:#f1f1f1;
+            border-color:white;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+        } 
+
+        .container1 {
+            height:auto;
+            border-style: solid;
+            background-color:white;
+            border-color:white;
+            margin-top:0;
+            border-radius:5px;
+            border-width:2px;
+            width:auto;
+        } 
+
+
+        select {
+            border-radius:25px;
+            padding:12px;
+            
+            margin-left:10px;
+            margin-top:10px;
+        }
+
+        .l {
+            color:darkgrey;
+            margin-left:10px;
+        }
+
+        p {
+            font-size:14px;
+        }
+
+        .arrow {
+            float:right;
+            width:40px;
+            cursor:pointer;
+            margin-top:0;
+            padding:10px;
+        }
+
+        .p1 {
+           
+            margin-left:10px;
+            font-size:17px;
+        }
+
+        .yr {
+            color:grey;
+            font-size:15px;
+            margin-left:10px;
+        }
+
+        .percent {
+            color:green;
+            font-size:18px;
+            float:right;
+            margin-right:10px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <img class="cancel" src="https://static.thenounproject.com/png/4810621-200.png" onclick="cancel()"> 
+        </nav>
+        <script>
+            function cancel() {
+            window.location.href = "plans.html"
+            }
+ 
+        </script>
+        
+        <h2>
+            Funds
+        </h2>
+    </header>
+
+    <div>
+        <br>
+        <form class="search" action="/action_page.php">
+            <input class="searchbar" type="text" placeholder="Search fund name or ISIN" name="search">
+        </form> 
+        <br>
+        <hr>
+    </div>
+
+    <div class="container">
+        
+    
+        <select name="aClass" id="aClass">
+            <option value="Asset Class">Asset Class</option>
+            <option value="Bonds">Bonds</option>
+            <option value="Equities">Equities</option>
+            <option value="Alternatives">Alternatives</option> 
+        </select>
+
+        <select name="sector" id="sector">
+            <option value="Sector">Sector</option>
+            <option value="Technology">Technology</option>
+            <option value="Financials">Financials</option>
+            <option value="Healthcare">Healthcare</option> 
+            <option value="Consumer">Consumer</option> 
+            <option value="Energy">Energy</option> 
+            <option value="Aggregate Bond">Aggregate Bond</option> 
+        </select>
+
+        <select name="geo" id="geo" value="Geography">
+            <option value="Geography">Geography</option>
+            <option value="Global">Global</option>
+            <option value="Asia Pacific">Asia Pacific</option>
+            <option value="North America">North America</option> 
+            <option value="Europe">Europe</option> 
+            <option value="Global Emerging Markets">Global Emerging Markets</option> 
+            <option value="Greater China">Greater China</option> 
+            <option value="Singapore">Singapore</option> 
+            <option value="Japan">Japan</option> 
+            <option value="India">India</option> 
+        </select>
+
+        <select name="dd" id="dd" value="Dividend Distribution">
+            <option value="Dividend Distribution">Dividend Distribution</option>
+            <option value="Cash">Cash</option>
+            <option value="Units">Units</option>
+            <option value="Accumulation">Accumulation</option> 
+        </select>
+
+        <select name="currency" id="currency" value="currency">
+            <option value="Currency">Currency</option>
+            <option value="SGD">SGD</option>
+            <option value="USD">USD</option>
+            <option value="AUD">AUD</option> 
+            <option value="EUR">EUR</option> 
+            <option value="GBP">GBP</option> 
+        </select>
+
+        <select name="fSource" id="fSource" value="Fund Source">
+            <option value="Fund Source">Fund Source</option>
+            <option value="Cash">Cash</option>
+            <option value="CPF">CPF</option>
+            <option value="SRS">SRS</option> 
+        </select>
+
+        <p>
+        <label class="l">Filter by:</label> <label>Cash</label>
+        <br><br>
+        <label class="l">Sort by: </label> <label>%(High - Low)</label>
+        <br><br>
+        <label class="l">Results:</label> <label>x funds</label>
+        </p>
+    </div>
+
+    <div class="container1">
+        <img type="button" onclick="viewBtn()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
+        <p class="p1">Nikki AM Japan Dividend Equity Fund -SGD-
+            <br>Hedged - Mdis - Cash
+        </p>
+        
+        <label for class="yr">1-Year Performance</label> 
+        <label for class="percent">33.17%</label>
+
+        <br>
+        <hr>
+    </div>
+
+    <div class="container1">
+        <img type="button" onclick="viewBtn()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
+        <p class="p1">Nikki AM Japan Dividend Equity Fund -SGD-
+            <br>Hedged - Mdis - Unit
+        </p>
+        
+        <label for class="yr">1-Year Performance</label> 
+        <label for class="percent">33.17%</label>
+
+        <br>
+        <hr>
+    </div>
+
+    <div class="container1">
+        <img type="button" onclick="viewBtn()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
+        <p class="p1">Nikki AM Japan Dividend Equity Fund -USD-
+            <br>Hedged - Mdis - Cash
+        </p>
+        
+        <label for class="yr">1-Year Performance</label> 
+        <label for class="percent">32.53%</label>
+
+        <br>
+        <hr>
+    </div>
+
+    <div class="container1">
+        <img type="button" onclick="viewBtn()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
+        <p class="p1">Nikki AM Japan Dividend Equity Fund -USD-
+            <br>Hedged - Mdis - Unit
+        </p>
+        
+        <label for class="yr">1-Year Performance</label> 
+        <label for class="percent">32.53%</label>
+
+        <br>
+        <hr>
+    </div>
+
+    <div class="container1">
+        <img type="button" onclick="viewBtn()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
+        <p class="p1">FSSA Regional India Fund - A - USD - <br>Acc 
+        </p>
+        
+        <label for class="yr">1-Year Performance</label> 
+        <label for class="percent">17.96%</label>
+
+        <br>
+        <hr>
+    </div>
+
+    <script>
+        function viewBtn() {
+            window.location.href="purchase.html"
+        }
+    </script>
+</body>
+</html>

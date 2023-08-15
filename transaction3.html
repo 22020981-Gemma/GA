@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+
+    <style>
+
+        html {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            margin-left:15px;
+            width:40px;
+            float:left; 
+            padding-right:45px;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        .container1 {
+            width:65%;
+            height:75px;
+            border-style:solid;
+            background-color: #3a3e46;
+            margin-left:3%;
+            border-color:#3a3e46
+        }
+
+        p {
+            margin-left:20px;
+            margin-bottom:0;
+            color:darkgrey;
+            
+        }
+
+        .sgd {
+            color:whitesmoke;
+            font-size:20px;
+            margin-left:20px;
+            
+        }
+
+        .amt {
+            
+            color:white;
+            font-size:20px;
+            float:right;
+            margin-top:0;
+            margin-right:20px;
+            
+
+        }
+
+        .container2 {
+            width:65%;
+            height:270px;
+            border-style:solid;
+            background-color: white;
+            margin-left:3%;
+            border-color:white;
+        }
+
+        .c1 {
+            color:grey;
+            margin-left:20px;
+        }
+
+        .c2 {
+            color:black;
+            margin-left:20px;
+        }
+
+        header {
+            padding-top:20px;
+            background-color:white;
+        }
+
+        h1 {
+            margin-top:0;
+        }
+
+        hr {
+            border: 1px solid darkgrey;
+            margin-bottom: 25px;
+        }
+
+        button {
+            padding:15px;
+            background-color: red;
+            color:white;
+            border:none;
+            display: block;
+            margin-left: auto;
+            margin-right:auto;
+            width:400px;
+            border-radius:10px;
+            cursor: pointer;
+            margin-top:70px;
+            
+        }
+
+        a {
+            float:right;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.icon-icons.com/icons2/2645/PNG/512/x_close_cross_delete_icon_159748.png" onclick="cancel()"> 
+        
+        <script>
+            function cancel() {
+            window.location.href = "etf.html"
+            }
+ 
+        </script>
+
+        <h1>
+            Review Transaction
+        </h1>
+        <hr>
+    </header>
+
+    <div class="container1">
+        <p>Amount</p>
+        
+        <label for class="sgd">SGD</label>
+        <label for class="amt">XXXX.XX</label>
+
+    </div>
+
+    <div class="container2">
+        <p class="c1">From:
+        <br class="c2">My Account
+        <br class="c1">XXX-XXXXXX-X</p>
+
+        <br>
+
+        <p class="c1">To:
+        <br class="c2">Nikko AM Japan Dividend Equity Fund - SGD - Hedged
+        <br> - Mdis - Cash
+        <!-- <br class="c1"></p> -->
+
+        <br>
+        <br>
+
+        <p class="c1">Your Comments: 
+        <br class="c2">Purchase</p>
+    </div>
+
+    <button onclick="cfmBtn()">CONFIRM</button>
+
+    
+
+    <script>
+        function cfmBtn() {
+            window.location.href="otp3.html"
+        }
+    </script>
+</body>
+</html>
