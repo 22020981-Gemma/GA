@@ -144,10 +144,22 @@
             
         </div>
 
+        <div class="container">
+            <img type="button" onclick="viewBtn()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
+            <p>FDXXXXXXXXXXXXXXXX</p>
+            
+            <p class="type">Advice</p>
+            
+            <p class="amt"> -X,XXX.XX</p>
+            <label for class="sgd">SGD</label>
+
+            <br>
+            <hr>
+        </div>
         
         
         <div class="container">
-            <img type="button" onclick="viewBtn()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
+            <img type="button" onclick="viewBtn2()" class="arrow" src="https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-1438234-1216195.png?f=webp">
             <p>Nikko AM Japan Dividend Equity Fund - SGD - Hedged
                 <br> - Mdis - Cash</p>
             
@@ -166,6 +178,10 @@
         document.getElementById("date").innerHTML = Date();
 
         function viewBtn() {
+            window.location.href="transaction5.html"
+        }
+
+        function viewBtn2() {
             window.location.href="transaction4.html"
         }
     </script>
